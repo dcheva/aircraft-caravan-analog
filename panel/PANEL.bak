@@ -1,0 +1,88 @@
+// Panel Configuration File
+
+[VCockpit01]
+size_mm				= 320,234
+pixel_size			= 320,234
+texture				= $GNS530Screen
+htmlgauge00=NavSystems/GPS/AS530/AS530.html, 0, 0, 320,234
+
+[VCockpit02]
+size_mm				= 350,190
+pixel_size			= 350,190
+texture				= $GNS430Screen
+htmlgauge00=NavSystems/GPS/AS430/AS430.html, 0, 0, 350, 190
+
+[VCockpit03]
+Background_color 		= 0,0,0
+size_mm 			= 650,768
+visible 			= 0
+pixel_size 			= 650,768
+texture				=$GTNScreen
+htmlgauge00=NavSystems/bksq-aircraft-analogcaravan/pms50_gtn750_int/gtn750_int.html, 0,0,650,768
+
+[VCockpit04]
+size_mm				= 800,110
+pixel_size			= 800,110
+texture				= $RadioCom1Screen
+htmlgauge00=Generic/Radios/bksq-aircraft-analogcaravan/KX155B/KX155B.html?Index=1, 0,  0, 800, 110
+
+[VCockpit05]
+size_mm				= 800,110
+pixel_size			= 800,110
+texture				= $RadioCom2Screen
+htmlgauge00=Generic/Radios/bksq-aircraft-analogcaravan/KX155B/KX155B.html?Index=2, 0, 0, 800, 110
+
+[VCockpit06]
+size_mm				= 500,70
+pixel_size			= 500,70
+texture				= $AdfScreen
+htmlgauge00=Generic/Radios/bksq-aircraft-analogcaravan/KR87A/KR87A.html,0,0,500,70
+
+[VCockpit07]
+size_mm				=440,100
+pixel_size			=440,100
+texture				=$TransponderScreen
+htmlgauge00=Generic/Transponders/AS330/AS330.html, 0,0,440, 100
+
+[VCockpit08]
+size_mm				= 512,105
+pixel_size			= 512,105
+texture				= $AutoPilotScreen
+htmlgauge00=Generic/Radios/bksq-aircraft-analogcaravan/KAP140/KAP140.html, 0,0,512,105
+
+[VCockpit09]
+size_mm				= 256,52
+pixel_size			= 256,52
+texture				= $DmeScreen
+htmlgauge00=Generic/Radios/bksq-aircraft-analogcaravan/KDI572/KDI572.html, 0,0,256,52
+
+[VCockpit10]
+size_mm				= 512,374
+pixel_size			= 512,374
+texture				= $RadarScreen
+htmlgauge00=NavSystems/bksq-aircraft-analogcaravan/bksq_wradar1/bksq_wradar1.html, 0, 0, 512, 374
+
+[VCockpit11]
+size_mm				= 1024,256
+pixel_size			= 1024,256
+texture				= $Kns80Screen
+htmlgauge00=Generic/Radios/bksq-aircraft-analogcaravan/KNS80/KNS80.html?Index=1, 0,  0, 1024, 256
+
+[Vcockpit12]
+background_color=0,0,0
+size_mm = 650,768
+pixel_size = 650,768
+texture = $GTNScreen_TDS
+htmlgauge00=WasmInstrument/WasmInstrument.html?wasm_module=Gauge/TDSGTNXiGaugeModule.wasm&wasm_gauge=GTNXI750U1, 0,0,650,768
+
+[VPainting01]
+size_mm	= 1024,256
+texture	= $RegistrationNumber
+location = exterior
+painting00=Registration/Registration.html?font_color=white, 0, 0, 1024, 256
+
+[VPainting02]
+size_mm				= 1024,256
+texture				= $RegistrationNumberInt
+location 			= interior
+painting00=Registration/Registration.html?font_color=white, 0, 0, 1024, 256

@@ -1,0 +1,247 @@
+[VERSION]
+major =1
+minor =0
+
+[GENERAL]
+atc_type ="TT:ATCCOM.ATC_NAME CESSNA.0.text"
+atc_model ="TT:ATCCOM.AC_MODEL C208.0.text"
+Category = "airplane"
+performance ="Maximum Speed\n175 kts            324 km\/hr\n\nCruise Speed\n164 kts \t        305 km\/hr at 20,000 ft\n\nEngine\nPratt & Whitney Canada, Inc., PT6A-114A Free Turbine Flat Rated at 675 Shaft hp  \n\nPropeller\nFour-Bladed, Constant Speed, Full Feathering, Reversible  McCauley, 106-inch diameter\n\nMaximum Endurance\n5.1 hours maximum cruise at 10,000 ft\n6.6 hours maximum cruise at 18,000 ft\n6.4 hours maximum range at 10,000 ft\n7.2 hours maximum range at 18,000 ft\n\nService Ceiling\n22,800 ft            6,949 m\n\nFuel Capacity\n335  gal              1,268 L\n\nEmpty Weight\n4,575 lb              2,075 kg\n\nMaximum Gross Weight\n8,785 lb\t            3,985 kg\n\nUseful Load\n4,000 lb\t            1,814 kg\n\nLength\n41 ft, 7 in             12.7 m\n\nWingspan\n52 ft, 1 in\t            15.8 m\n\nHeight\n15 ft, 5-1\/2 in      4.8 m\n\nSeating\nUp to 14"
+icao_type_designator =C208
+icao_manufacturer =CESSNA
+icao_model =208 Grand Caravan
+icao_engine_type =Turboprop/Turboshaft
+icao_engine_count =1
+icao_WTC =L
+icao_generic=0
+
+[PILOT]
+pilot ="Pilot_Male_Casual"
+copilot ="Pilot_Female_Casual"
+instructor ="Pilot_Female_Casual"
+pilot_default_animation ="Idle1_PosePropeller","","","","","","","","","","","","","","",""
+copilot_default_animation ="Idle2_PosePropeller","","","","","","","","","","","","","","",""
+pilot_attach_node ="PILOT_0"
+copilot_attach_node ="PILOT_1"
+
+[VR]
+yoke_anim_x = "HANDLING_YOKE_LEVER_StickLR"
+yoke_anim_y = "HANDLING_yoke_Lever_StickForeAft"
+yoke_node = "YOKE_LEFT"
+yoke_collision_mesh = "YOKE_LEFT_COLLISION"
+
+[SERVICES]
+FUELTRUCK =1
+BAGGAGE_LOADER =0
+CATERING_TRUCK =0
+BOARDING_RAMP =0
+GROUND_POWER_UNIT =1
+PUSHBACK =0
+SMALL_PUSHBACK =1
+MARSHALLER =1
+JETWAY =0
+
+[EFFECTS]
+wake =fx_wake, 0
+water =fx_spray, 0
+dirt =fx_tchdrt, 0
+concrete =fx_sparks, 0
+touchdown =fx_tchdwn_s, 1
+effect.0 =fx_exhaust_right#(A:GENERAL ENG COMBUSTION:1, boolean)#FX_ASOBO_M_REACTORHEAT_TBM930_R
+waterspeed=fx_spray, 0
+contrail=fx_contrail_l, 0
+startup=fx_engstrt, 1
+landrotorwash=fx_rtr_lnd, 0
+waterrotorwash=fx_rtr_wtr, 0
+vaportrail_l=fx_vaportrail_l, 0
+vaportrail_r=fx_vaportrail_r, 0
+l_wingtipvortice=fx_wingtipvortice_l, 1
+r_wingtipvortice=fx_wingtipvortice_r, 1
+fueldump=, 0
+EngineFire=fx_engfire, 0
+EngineDamage=fx_engsmoke, 0
+EngineOilLeak=fx_OilLeak, 0
+SkidPavement=fx_skidmark, 0
+SnowSkiTrack=, 0
+WheelSnowSpray=fx_WheelSnowSpray, 0
+WheelWetSpray=fx_WheelWetSpray, 0
+WetEngineWash=fx_WetEngineWash, 0
+SnowEngineWash=fx_SnowEngineWash, 0
+WaterBallastDrain=fx_WaterBallastDrain, 0
+PistonFailure=fx_PistonFailure, 1
+windshield_rain_effect_available=1
+
+[LOADING]
+ImageName = LOADING_FREEFLIGHT
+Tips0 = "You can select different radio configurations using the knobs on the right of the panel in this aircraft."
+Tips1 = "There are 12 busses and 90 electrical circuits simulated in this aircraft with interactable circuit breakers."
+Tips2 = "Many items in this aircraft remember their state from the last time you flew like your radio configuration."
+Tips3 = "See the extensive operating manual packaged with this aircraft for details on every piece of equipment."
+Tips4 = "Try flying IFR with no GPS for one of the greatest challenges in aviation."
+
+[IKCHAINS]
+right_hand_target=""
+left_hand_target=""
+left_foot_target=""
+right_foot_target=""
+[TAKEOFF]
+takeoffVerticalSpeedGround=400
+takeoffVerticalSpeedAir=500
+takeoffAirspeedAirMultiplier=1.3
+[WAYPOINT]
+SlowDownDistance=50
+StopDistance=2
+SlowDownOnLastWayPoint=1
+CanReverse=1
+FrontRadiusMeters=-1
+[AI_INPUT]
+ThrottleFactorDelta=0
+[LANDING]
+flareAngle=-1
+maxPitchRate=0.333333
+horizontalSpeedErrorMultiplier=12
+maxThrottleRate=0.02
+maxThrottleSlope=0.4
+correctPitchDeltaMultiplier=0.005
+[TAXI]
+DistanceToLaneLine=0
+[SIMPLIFIEDSIM]
+dampingVelocity=0.4
+brakesMultiplier=1
+brakesRotationDamping=0.5
+throttleFactor=0.5
+portanceFactor=0.2
+spoilersPortance=-0.1
+flapsPortance=0.1
+headingAccelerationFromBankFactor=0.004
+headingInertia=0.001
+airspeedAccelerationAugmentationPerFrame=1
+altitudeAccelerationPerFrame=5
+verticalSpeedAccelerationAugmentationPerFrame=1
+minRPMPct=0.25
+landingGearAnimPct=65
+airResistanceFactorXYZ= 0.002, 0.04, 0.0001
+spoilersXYZFactor= 0, -0.005, 0.0001
+flapsXYZFactor= 0, 0.001, 0.0001
+[STICKANDRUDDER]
+rudderGroundPID= 0.015, 0.001, 0.001, 1, 1
+throttleGroundPID= 1, 0.1, 10, 10, 20
+brakeDifferentialPID= 0.001, 0.001, 0.8, 1, 5
+throttleDifferentialPID= 10, 0.001, 20, 10, 40
+throttlePID= 20, 0.3, 20, 20, 500
+pitchPID= 1, 0.01, 2, 0.6, 5
+rollPID= 1, 0.001, 1, 0.5, 8
+headingPID= 1, 0.01, 1, 1, 20
+verticalSpeedPID= 0.5, 0.1, 0.5, 200, 5000
+nav_ex1PID= 3, 0.01, 2, 0.035, 50
+nav_yawPID= 0.02, 0.00006, 0.006, 0.3, 3
+glideSlopePID= 5.52, 1, 3, 2, 60
+flightLevelPID= 10, 1, 10, 100, 1000
+
+[FLTSIM.0]
+Title="Black Square 208B Grand Caravan Default Red"
+Model=""
+Panel=""
+Sound="\..\..\Asobo_208B_GRAND_CARAVAN_EX\sound"
+Texture="DEFAULTRED"
+KB_Checklists="Cessna208B_Check"
+KB_Reference="Cessna208B_ref"
+description="TT:AIRCRAFT.DESCRIPTION"
+wip_indicator=0
+ui_manufacturer="Black Square"
+ui_type="Caravan 208B Analog Instrumentation"
+ui_variation="Default Red"
+ui_typerole="Single Engine TurboProp"
+ui_createdby="Black Square"
+ui_thumbnailfile=""
+ui_certified_ceiling=25000
+ui_max_range=964
+ui_autonomy=7
+ui_fuel_burn_rate=390
+atc_id="ASXGS"
+icao_airline=""
+atc_id_enable=1
+atc_airline=""
+atc_flight_number=""
+atc_heavy=0
+atc_id_color="0xff000000"
+atc_id_font=""
+isAirTraffic=0
+isUserSelectable=1
+isFlyable=1
+canBeUsedByAITraffic=1
+Effects=""
+atc_parking_types="RAMP"
+atc_parking_codes=""
+
+[FLTSIM.1]
+Title="Black Square 208B Grand Caravan Default Green"
+Model=""
+Panel=""
+Sound="\..\..\Asobo_208B_GRAND_CARAVAN_EX\sound"
+Texture="DEFAULTGREEN"
+KB_Checklists="Cessna208B_Check"
+KB_Reference="Cessna208B_ref"
+description="TT:AIRCRAFT.DESCRIPTION"
+wip_indicator=0
+ui_manufacturer="Black Square"
+ui_type="Caravan 208B Analog Instrumentation"
+ui_variation="Default Green"
+ui_typerole="Single Engine TurboProp"
+ui_createdby="Black Square"
+ui_thumbnailfile=""
+ui_certified_ceiling=25000
+ui_max_range=964
+ui_autonomy=7
+ui_fuel_burn_rate=390
+atc_id="ASXGS"
+icao_airline=""
+atc_id_enable=1
+atc_airline=""
+atc_flight_number=""
+atc_heavy=0
+atc_id_color="0xff000000"
+atc_id_font=""
+isAirTraffic=0
+isUserSelectable=1
+isFlyable=1
+canBeUsedByAITraffic=1
+Effects=""
+atc_parking_types="RAMP"
+atc_parking_codes=""
+
+[FLTSIM.2]
+Title="Black Square 208B Grand Caravan Default Blue"
+Model=""
+Panel=""
+Sound="\..\..\Asobo_208B_GRAND_CARAVAN_EX\sound"
+Texture="DEFAULTBLUE"
+KB_Checklists="Cessna208B_Check"
+KB_Reference="Cessna208B_ref"
+description="TT:AIRCRAFT.DESCRIPTION"
+wip_indicator=0
+ui_manufacturer="Black Square"
+ui_type="Caravan 208B Analog Instrumentation"
+ui_variation="Default Blue"
+ui_typerole="Single Engine TurboProp"
+ui_createdby="Black Square"
+ui_thumbnailfile=""
+ui_certified_ceiling=25000
+ui_max_range=964
+ui_autonomy=7
+ui_fuel_burn_rate=390
+atc_id="ASXGS"
+icao_airline=""
+atc_id_enable=1
+atc_airline=""
+atc_flight_number=""
+atc_heavy=0
+atc_id_color="0xff000000"
+atc_id_font=""
+isAirTraffic=0
+isUserSelectable=1
+isFlyable=1
+canBeUsedByAITraffic=1
+Effects=""
+atc_parking_types="RAMP"
+atc_parking_codes=""
